@@ -59,7 +59,7 @@
 | **UI/UX & Testing** | ![Shadcn/ui](https://img.shields.io/badge/Shadcn%2Fui-000000?style=flat&logo=shadcnui&logoColor=white) ![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat&logo=storybook&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=prettier&logoColor=black) ![Husky](https://img.shields.io/badge/Husky-42B883?style=flat&logo=husky&logoColor=white) |
 
 ## 시스템 아키텍처
-![system-architecture](https://github.com/user-attachments/assets/a39dbd33-e5a0-48f0-8f36-b7e4d80c6df8)
+![system-architecture (1)](https://github.com/user-attachments/assets/d6cc4fee-b1dc-4c97-8d39-9e3832c67a12)
 
 
 ## 프로젝트 관련 문서
