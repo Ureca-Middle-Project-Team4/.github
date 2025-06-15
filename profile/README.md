@@ -67,6 +67,7 @@
 - [플로우 차트](https://www.figma.com/proto/C1HjN8qg3Vptm2j7k2cT8N/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8?node-id=1-4&t=OH4mgwF8RPp4bDv8-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1)
 - [API 명세서](https://hollow-cello-87b.notion.site/1fb3347f51ee81269bceeaad7f3c76f1?v=1fb3347f51ee81719ba1000c67dfe978)
 - [ERD](https://dbdiagram.io/d/DB_4ever0-684e577c3cc77757c8eaba7c)
+- [Storybook](https://6835efb2a0dda6635d6b2c1d-nazyzhfott.chromatic.com)
 
 ---
 
