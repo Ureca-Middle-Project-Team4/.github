@@ -59,7 +59,7 @@
 | **UI/UX & Testing** | ![Shadcn/ui](https://img.shields.io/badge/Shadcn%2Fui-000000?style=flat&logo=shadcnui&logoColor=white) ![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat&logo=storybook&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=prettier&logoColor=black) ![Husky](https://img.shields.io/badge/Husky-42B883?style=flat&logo=husky&logoColor=white) |
 
 ## 시스템 아키텍처
-![system-architecture (1)](https://github.com/user-attachments/assets/d6cc4fee-b1dc-4c97-8d39-9e3832c67a12)
+![system-architecture](https://github.com/user-attachments/assets/23b5d5b9-4266-42d5-89d6-c6d473e630b8)
 
 
 ## 프로젝트 관련 문서
@@ -70,5 +70,4 @@
 - [Storybook](https://6835efb2a0dda6635d6b2c1d-nazyzhfott.chromatic.com)
 
 ---
-
 **Team 4EVER0** | LG U+ URECA 프론트엔드 개발자 과정 2기 종합프로젝트 4조
