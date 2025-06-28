@@ -1,6 +1,6 @@
 # 🐙 MoonoZ
 
-## MZ세대를 위한 스마트한 U+ 혜택 큐레이션 서비스
+## MZ세대를 위한 스마트한 LG U+ 혜택 큐레이션 서비스, MoonoZ🐙
 
 <div align="center">
 
@@ -9,7 +9,7 @@
 **경기 불황 속에서 합리적 소비를 추구하는 MZ세대를 위한**  
 **AI 기반 LG U+ 요금제 및 구독 서비스 추천 플랫폼**
 
-[WBS](https://docs.google.com/spreadsheets/d/1ln5VudFdBKMbaNANwzZyW0CGLYC_R9Xf/edit?usp=sharing&ouid=101077923369398316818&rtpof=true&sd=true) • [플로우 차트](https://www.figma.com/proto/C1HjN8qg3Vptm2j7k2cT8N/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8?node-id=1-4&t=OH4mgwF8RPp4bDv8-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1) • [API 명세서](https://hollow-cello-87b.notion.site/1fb3347f51ee81269bceeaad7f3c76f1?v=1fb3347f51ee81719ba1000c67dfe978) • [ERD](https://dbdiagram.io/d/DB_4ever0-684e577c3cc77757c8eaba7c) • [Storybook](https://6835efb2a0dda6635d6b2c1d-nazyzhfott.chromatic.com)
+[WBS](https://docs.google.com/spreadsheets/d/1ln5VudFdBKMbaNANwzZyW0CGLYC_R9Xf/edit?usp=sharing&ouid=101077923369398316818&rtpof=true&sd=true) • [플로우 차트](https://www.figma.com/proto/C1HjN8qg3Vptm2j7k2cT8N/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8?node-id=1-4&t=OH4mgwF8RPp4bDv8-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1) • [API 명세서](https://hollow-cello-87b.notion.site/1fb3347f51ee81269bceeaad7f3c76f1?v=1fb3347f51ee81719ba1000c67dfe978) • [ERD](https://dbdiagram.io/d/DB_4ever0-684e577c3cc77757c8eaba7c) • [Storybook](https://6835efb2a0dda6635d6b2c1d-wezhjmyzke.chromatic.com)
 
 </div>
 
@@ -75,47 +75,15 @@
 | **UI/UX & Testing**   | ![Shadcn/ui](https://img.shields.io/badge/Shadcn%2Fui-000000?style=flat&logo=shadcnui&logoColor=white) ![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat&logo=storybook&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=prettier&logoColor=black) ![Husky](https://img.shields.io/badge/Husky-42B883?style=flat&logo=husky&logoColor=white)                                                                                                                                                                                                     |
 
 ## 시스템 아키텍처
+![system-architecture](https://github.com/user-attachments/assets/68b723ca-6eb7-4818-847e-b3300674b380)
 
-![system-architecture](https://github.com/user-attachments/assets/23b5d5b9-4266-42d5-89d6-c6d473e630b8)
+
 
 ## AI 챗봇 동적 스트리밍 제어 아키텍처
+![Mermaid Chart - Create complex, visual diagrams with text  A smarter way of creating diagrams -2025-06-26-170728](https://github.com/user-attachments/assets/16acb45e-a9c6-4fd5-ad87-b606b499a49e)
 
-```mermaid
-sequenceDiagram
-    participant User as 👤 사용자
-    participant Hook as 🎣 useStreamingChat
-    participant Processor as ⚙️ processStreamWithThrottle
-    participant Throttle as ⏱️ StreamingThrottle
-    participant FastAPI as 🐍 FastAPI 서버
-    participant LLM as 🤖 LangChain + OpenAI
 
-    User->>Hook: 메시지 입력
-    Hook->>FastAPI: fetch(Accept: text/event-stream)
-    FastAPI->>LLM: 템플릿 기반 프롬프트 처리
 
-    LLM-->>FastAPI: 스트리밍 응답 시작
-    FastAPI-->>Processor: SSE 형태 전송 (data: ...\n\n)
-
-    loop 각 SSE chunk 처리
-        Processor->>Processor: isJSONStructure() 검사
-
-        alt JSON 구조 (카드/추천)
-            Processor-->>Hook: 지연 없이 즉시 전송
-            Hook-->>User: 카드 컴포넌트 즉시 렌더링
-        else 일반 텍스트
-            Processor->>Throttle: calculateDelay(chunkSize)
-            Throttle->>Throttle: 청크 간격/크기 분석
-            Throttle-->>Processor: 동적 지연시간 반환
-            Processor->>Processor: setTimeout(delay)
-            Processor-->>Hook: 지연 후 텍스트 전송
-            Hook-->>User: 자연스러운 타이핑 효과
-        end
-    end
-
-    FastAPI-->>Processor: data: [DONE]
-    Processor-->>Hook: 스트림 완료
-    Hook->>Throttle: reset() 호출
-```
 
 ---
 **Team 4EVER0** | LG U+ URECA 프론트엔드 개발자 과정 2기 종합프로젝트 4조
