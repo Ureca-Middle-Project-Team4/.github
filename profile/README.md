@@ -1,5 +1,3 @@
-# 🐙 MoonoZ
-
 ## MZ세대를 위한 스마트한 LG U+ 혜택 큐레이션 서비스, MoonoZ🐙
 
 <div align="center">
@@ -8,6 +6,8 @@
 
 **경기 불황 속에서 합리적 소비를 추구하는 MZ세대를 위한**  
 **AI 기반 LG U+ 요금제 및 구독 서비스 추천 플랫폼**
+
+ _유레카 프론트엔드 개발자 2기 종합 프로젝트 최우수상🥇_
 
 [WBS](https://docs.google.com/spreadsheets/d/1ln5VudFdBKMbaNANwzZyW0CGLYC_R9Xf/edit?usp=sharing&ouid=101077923369398316818&rtpof=true&sd=true) • [플로우 차트](https://www.figma.com/proto/C1HjN8qg3Vptm2j7k2cT8N/%ED%94%8C%EB%A1%9C%EC%9A%B0%EC%B0%A8%ED%8A%B8?node-id=1-4&t=OH4mgwF8RPp4bDv8-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1) • [API 명세서](https://hollow-cello-87b.notion.site/1fb3347f51ee81269bceeaad7f3c76f1?v=1fb3347f51ee81719ba1000c67dfe978) • [ERD](https://dbdiagram.io/d/DB_4ever0-684e577c3cc77757c8eaba7c) • [Storybook](https://6835efb2a0dda6635d6b2c1d-wezhjmyzke.chromatic.com)
 
@@ -86,7 +86,6 @@
 
 ## AI 챗봇 동적 스트리밍 제어 아키텍처
 ![Mermaid Chart - Create complex, visual diagrams with text  A smarter way of creating diagrams -2025-06-26-170728](https://github.com/user-attachments/assets/16acb45e-a9c6-4fd5-ad87-b606b499a49e)
-
 
 
 
